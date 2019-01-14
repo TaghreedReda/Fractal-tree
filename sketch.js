@@ -10,7 +10,7 @@ function setup() {
 			x: x,
 			y: y
 		};
-		ret.x = (x - cx) * cos(ang) - (y - cy) * -sin(ang) + cx;
+		ret.x = (x - cx) * cos(ang) - (y - cy) * sin(ang) + cx;
 		ret.y = (x - cx) * sin(ang) + (y - cy) * cos(ang) + cy;
 		return ret;
 	};
