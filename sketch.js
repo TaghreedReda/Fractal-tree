@@ -36,6 +36,7 @@ function draw() {
 	branch(width / 2, height, height / 4, -90);
 }
 
+//takes user input
 function input(){
 	if(keyIsDown(LEFT_ARROW))
 		dif -= 0.5;
