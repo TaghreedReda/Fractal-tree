@@ -2,7 +2,6 @@ var dif = 60;
 
 function setup() {
 	createCanvas(600, 600);
-	test();
 }
 
 function draw() {
@@ -18,10 +17,6 @@ function input(){
 		dif -= 0.5;
 	if(keyIsDown(RIGHT_ARROW))
 		dif += 0.5;
-}
-
-function test(){
-	print("Hello");
 }
 
 function branch(x, y, len, angle)
