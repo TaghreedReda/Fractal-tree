@@ -32,5 +32,13 @@ function setup() {
 
 function draw() {
 	background(0);
+	input();
 	branch(width / 2, height, height / 4, -90);
+}
+
+function input(){
+	if(keyIsDown(LEFT_ARROW))
+		dif -= 0.5;
+	if(keyIsDown(RIGHT_ARROW))
+		dif += 0.5;
 }
