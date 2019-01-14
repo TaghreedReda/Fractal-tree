@@ -1,6 +1,6 @@
 var rotate;
 var branch;
-var dif = 300;
+var dif = 60;
 
 function setup() {
 	createCanvas(600, 600);
@@ -15,13 +15,17 @@ function setup() {
 		return ret;
 	};
 	branch = function(x, y, len, angle) {
-		if (len > 1) {
+		if (len > 3) {
 			var end = rotate(x + len, y, x, y, angle);
 			stroke(255);
 			line(x, y, end.x, end.y);
 			
 			branch(end.x, end.y, len * 0.67, angle + dif);
 			branch(end.x, end.y, len * 0.67, angle - dif);
+		}
+		else{
+			stroke(0, 255, 0)
+			ellipse(x, y, 2, 4);
 		}
 	}
 }
